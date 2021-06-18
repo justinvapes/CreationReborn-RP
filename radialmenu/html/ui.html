@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Radial</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i" rel="stylesheet">
+    <script type="text/javascript" src="nui://game/ui/jquery.js"></script>
+    <script type="text/javascript" src="js/RadialMenu.js"></script>
+    <script type="text/javascript" src="js/all.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/RadialMenu.css">
+    <link type="text/css" rel="stylesheet" href="css/all.min.css">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let menuKeybind = ""
+            let resourceName = ""
+            let menu = null;
+            window.addEventListener('message', function (event) {
+                let eventData = event.data;
+                menuKeybind = eventData.menuKeyBind;
+                resourceName = eventData.resourceName;
+                if (eventData.state === "show") {
+                    $('#container').append(`<div id="navMenu"></div>`);
+                    let style = eventData.rootStyle;
+                    menu = new RadialMenu({
+                        parent: document.getElementById('navMenu'),
+                        size: 450,
+                        closeOnClick: true,
+                        menuItems: eventData.data,
+                        onClick: function (item) {
+                            if(item.functionName !== 'undefined') {
+                                $.post('http://'+resourceName+'/triggerAction', JSON.stringify({action: item.functionName, parameters: item.functionParameters}));
+                            }
+                        }
+                    });
+                    menu.open();
+
+                } else if (eventData.state === 'destroy') {
+                    $("#navMenu").remove();
+                    menu.destroy();
+                }
+            });
+            window.addEventListener("keyup", function onEvent(event) {
+                // Close menu when key is released
+                if (event.key === menuKeybind) {
+                    $.post(`http://${resourceName}/closemenu`, JSON.stringify({}));
+                }
+            });
+        });
+
+    </script>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            font-family: "Calibri";
+        }
+
+        #container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menuHolder {
+            font-size: 10px;
+        }
+
+        #icons {
+            display: none;
+            filter:url(#drop-shadow);
+        }
+    </style>
+</head>
+
+<body>
+    <i data-fa-symbol="more" class="fa fa-ellipsis-h"></i>
+    <i data-fa-symbol="keysmenu" class="fas fa-key"></i>
+    <i data-fa-symbol="animations" class="fas fa-meh"></i>
+    <i data-fa-symbol="clothing" class="fas fa-theater-masks"></i>
+    <i data-fa-symbol="cancelemotes" class="fas fa-angry"></i>
+    <i data-fa-symbol="thumbsup" class="fas fa-thumbs-up"></i>
+    <i data-fa-symbol="finger" class="fas fa-hand-middle-finger"></i>
+    <i data-fa-symbol="crossarms" class="fas fa-tired"></i>
+    <i data-fa-symbol="facepalm" class="fas fa-hand-paper"></i>
+    <i data-fa-symbol="think" class="fas fa-meh-rolling-eyes"></i>
+    <i data-fa-symbol="lay" class="fas fa-bed"></i>
+    <i data-fa-symbol="sit" class="fas fa-chair"></i>
+    <i data-fa-symbol="sad" class="fas fa-sad-cry"></i>
+    <i data-fa-symbol="whistle" class="fas fa-bed"></i>
+    <i data-fa-symbol="twerk" class="fas fa-music"></i>
+    <i data-fa-symbol="teddy" class="fas fa-child"></i>
+    <i data-fa-symbol="flowers" class="fas fa-seedling"></i>
+    <i data-fa-symbol="carry" class="fas fa-people-carry"></i>
+
+    
+    <i data-fa-symbol="gloves" class="fas fa-mitten"></i>
+    <i data-fa-symbol="shoes" class="fas fa-socks"></i>
+    <i data-fa-symbol="hair" class="fas fa-person-booth"></i>
+    <i data-fa-symbol="hat" class="fas fa-hat-cowboy"></i>
+    <i data-fa-symbol="glasses" class="fas fa-glasses"></i>
+    <i data-fa-symbol="ear" class="fas fa-deaf"></i>
+    <i data-fa-symbol="neck" class="fas fa-people-carry"></i>
+    <i data-fa-symbol="watch" class="fas fa-clock"></i>
+    <i data-fa-symbol="bracelet" class="fas fa-ring"></i>
+    <i data-fa-symbol="mask" class="fas fa-mask"></i>
+    <i data-fa-symbol="pants" class="fas fa-person-booth"></i>
+    <i data-fa-symbol="shirt" class="fas fa-tshirt"></i>
+    <i data-fa-symbol="reset" class="fas fa-person-booth"></i>
+
+    <i data-fa-symbol="windows" class=" fas fa-window-maximize"></i>
+    <i data-fa-symbol="doors" class=" fas fa-door-open"></i>
+    <i data-fa-symbol="keys" class=" fas fa-key"></i>
+    <i data-fa-symbol="hood" class=" fas fa-car-side"></i>
+    <i data-fa-symbol="boot" class=" fas fa-car-side"></i>
+    <i data-fa-symbol="cruise" class=" fas fa-tachometer-alt"></i>
+    <i data-fa-symbol="traction" class=" fas fa-grip-lines"></i>
+    <i data-fa-symbol="engine" class=" fas fa-cogs"></i>
+    <!-- HTML code -->
+    <div id="container">
+        <div id="navMenu"></div>
+    </div>
+</body>
+
+</html>

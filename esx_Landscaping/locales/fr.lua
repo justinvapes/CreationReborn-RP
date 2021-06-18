@@ -1,0 +1,18 @@
+Locales['fr'] = {
+	['GPS_info'] = 'New Route Is Now Set On Your ~y~GPS',
+	['cancel_mission'] = 'You canceled the mission',
+	['cancel_mission2'] = '~w~Press ~r~[G] ~w~In Your Vehicle For Another Job',
+	['pickup'] = 'Press ~INPUT_CONTEXT~ To Do The Job',
+	['end_service'] = 'Finish this service',
+	['take_service'] = 'Start Working',
+	['end_service_notif'] = '~r~Finished ~w~Work',
+	['take_service_notif'] = '~g~Started ~w~Work',
+	['start_job'] = 'Press ~r~[G] ~w~To Get Your First Job',
+	['Vehicle_Menu_Title'] = 'Service vehicle',
+	['in_vehicle'] = '~r~Get out of your vehicle',
+	['vehicle_broken'] = '~w~The Vehicle Is To ~r~Damaged! ~w~Call A Mechanic And Get It Repaired First To Get Your ~g~$500 ~w~Deposit back!',
+	['Deposit_Paid'] = '~w~Vehicle Returned In A Good State! Deposit Of ~g~$500 ~w~Has Now Been Refunded!',
+	['bad_vehicle'] = 'You can only order ~b~ service vehicles',
+	['not_good_veh'] = '~r~You must be in your service vehicle',
+	['stop_npc'] = 'Action ~r~ Impossible ~s~: Go to the depot To Cash In Your Payslips First',
+}

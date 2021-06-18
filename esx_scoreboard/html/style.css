@@ -1,0 +1,322 @@
+/*This is what defines the scroll bar for the table*/
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+body {
+	overflow: hidden;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 5px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+	background: rgb(150, 150, 150);
+	border-radius: 15px;
+}
+
+.my-custom-scrollbar {
+	position: relative;
+	height: 235px;
+	overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+	display: block;
+	height: 50.0vh;
+	overflow-y: auto !important;
+	/* If you spot a hideous footer at the bottom of the table, then this 
+	   Needs to be changed for that media quiery. Stick to vh. */
+}
+
+.custom-scroll {
+	height: 300px;
+	overflow-y: auto;
+}
+
+
+/*prevent the scroll bar showing for anything other than the table.*/
+
+/*End scroll control.*/
+
+/*End of scroll bar*/
+
+/* start of table witch craft */
+
+table {
+	text-align: left;
+	position: relative;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 0.25rem;
+}
+
+.imgContainer {
+	text-align: center !important;
+}
+
+.imgContainer img {
+	width: 100%;
+}
+
+.jobs a {
+	padding: 0.25vw;
+}
+
+/* End of table witch craft */
+
+#wrap {
+	display: none; 
+	font-family: 'Segoe UI';
+	overflow: auto;
+	width: 50%;
+	height: 40vw;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(128, 128, 128, 0.85);
+	color: rgba(255, 255, 255, 0.9);
+	border-radius: 2px;
+	margin-top: 5%;
+	opacity: 0.9;
+	overflow: hidden !important;
+}
+
+.header {
+	background-color: #1C1C1C;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.playerlist {
+	width: 100%;
+	text-align: center;
+	color: white;
+	margin-left: -12.5%;
+}
+
+.serverinfo {
+	font-size: 0.8vw;
+	text-align: center;
+	padding-top: 0.5%;
+}
+
+#imageDiv img {
+	width: 595px;
+	height: 105px;
+	text-align: center;
+	padding-top: -550px;
+}
+
+.jobs {
+	font-family: 'Segoe UI';
+	padding-top: 1px;
+	background-color: rgb(128, 128, 128, 0.85);
+	height: 25px;
+	width: 100%;
+	text-align: center;
+}
+
+/*2560x1440*/
+@media all and (min-width: 2560px) and (min-height: 1440px) {
+	/*This is what defines the scroll bar for the table*/
+	::-webkit-scrollbar {
+		width: 12px;
+	}
+	/* Track */
+	::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px grey;
+		border-radius: 5px;
+	}
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: rgb(150, 150, 150);
+		border-radius: 15px;
+	}
+	.my-custom-scrollbar {
+		position: relative;
+		height: 235px;
+		overflow: auto;
+	}
+	.table-wrapper-scroll-y {
+		display: block;
+		height: 45.8vh;
+		/* If you spot a hideous footer at the bottom of the table, then this 
+	   Needs to be changed for that media quiery. Stick to vh. */
+	}
+	.custom-scroll {
+		height: 300px;
+		overflow-y: auto;
+	}
+
+	/* start of table witch craft */
+	table {
+		text-align: left;
+		position: relative;
+		border-collapse: collapse;
+	}
+	th, td {
+		padding: 0.25rem;
+	}
+	/* End of table witch craft */
+	#wrap {
+		display: none; 
+		font-family: 'Segoe UI';
+		overflow: auto;
+		width: 40%;
+		height: 35vw;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: rgb(128, 128, 128, 0.85);
+		color: rgba(255, 255, 255, 0.9);
+		border-radius: 2px;
+		margin-top: 5%;
+		opacity: 0.9;
+	}
+
+	.header {
+		background-color: #1C1C1C;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+
+	.header a {
+		padding: 3%;
+	}
+
+	.playerlist {
+		width: 100%;
+		text-align: center;
+		color: white;
+		margin-left: -11.5%;
+	}
+
+	.serverinfo {
+		font-size: 0.8vw;
+		text-align: center;
+		padding-top: 0.5%;
+	}
+
+	#imageDiv img {
+		width: 595px;
+		height: 105px;
+		text-align: center;
+		padding-top: -550px;
+	}
+
+	.jobs {
+		font-family: 'Segoe UI';
+		padding-top: 1px;
+		background-color: rgb(128, 128, 128, 0.85);
+		height: 25px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.jobs a {
+		 padding: 0.15vw; /*Increase or decrease this */
+	}
+	
+}
+
+/*3440x1440*/
+
+@media all and (min-width: 3440px) and (min-height: 1440px) {
+	/*This is what defines the scroll bar for the table*/
+	::-webkit-scrollbar {
+		width: 12px;
+	}
+	/* Track */
+	::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px grey;
+		border-radius: 5px;
+	}
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: rgb(150, 150, 150);
+		border-radius: 15px;
+	}
+	.my-custom-scrollbar {
+		position: relative;
+		height: 235px;
+		overflow: auto;
+	}
+	.table-wrapper-scroll-y {
+		display: block;
+		height: 55.0vh;
+		/* If you spot a hideous footer at the bottom of the table, then this 
+	   Needs to be changed for that media quiery. Stick to vh. */
+	}
+	.custom-scroll {
+		height: 300px;
+	}
+	
+	/* start of table witch craft */
+	table {
+		text-align: left;
+		position: relative;
+		border-collapse: collapse;
+	}
+
+	/* End of table witch craft */
+	#wrap {
+		display: none; 
+		font-family: 'Segoe UI';
+		overflow: auto;
+		width: 30%;
+		height: 30vw;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: rgb(128, 128, 128, 0.85);
+		color: rgba(255, 255, 255, 0.9);
+		border-radius: 2px;
+		margin-top: 5%;
+		opacity: 0.9;
+	}
+	.header {
+		background-color: #1C1C1C;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+	.header a {
+		padding: 3%;
+	}
+	.playerlist {
+		width: 100%;
+		text-align: center;
+		color: white;
+		margin-left: -11%;
+		font-size: 0.5vw;
+	}
+	.serverinfo {
+		font-size: 0.6vw;
+		text-align: center;
+		padding-top: -0.1%;
+	}
+	#imageDiv img {
+		width: 595px;
+		height: 105px;
+		text-align: center;
+		padding-top: -550px;
+	}
+	.jobs {
+		font-family: 'Segoe UI';
+		padding-top: 1px;
+		background-color: rgb(128, 128, 128, 0.85);
+		height: 1.8vh;
+		width: 100%;
+		text-align: center;
+	}
+
+	.jobs a {
+		padding: 0.15vw; /*Increase or decrease this */
+ }
+}

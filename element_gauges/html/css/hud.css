@@ -1,0 +1,338 @@
+@font-face {
+	font-family: 'Oswald-Regular';
+	src: url('../fonts/Oswald-Regular.eot');
+	src: url('../fonts/Oswald-Regular.eot#iefix') format('embedded-opentype'),
+		 url('../fonts/Oswald-Regular.woff') format('woff'),
+		 url('../fonts/Oswald-Regular.woff2') format('woff2'),
+		 url('../fonts/Oswald-Regular.ttf') format('truetype'),
+		 url('../fonts/Oswald-Regular.svg#webfont34M5alKg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Oswald-Light';
+	src: url('../fonts/Oswald-Light.eot');
+	src: url('../fonts/Oswald-Light.eot#iefix') format('embedded-opentype'),
+		 url('../fonts/Oswald-Light.woff') format('woff'),
+		 url('../fonts/Oswald-Light.woff2') format('woff2'),
+		 url('../fonts/Oswald-Light.ttf') format('truetype'),
+		 url('../fonts/Oswald-Light.svg#webfont34M5alKg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* body {
+	background-color: black;
+} */
+.text-addon {
+	margin-top: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+.gauge-title {
+	font-size: 14px;
+	fill: #FFFFFF;
+}
+.gauge-value {
+	font-size: 24px;
+	fill: #FFFFFF;
+}
+.gauge-unity {
+	font-size: 14px;
+	fill: #FFFFFF;
+}
+#container {
+	display: none;
+	z-index: -1;
+}
+#rpmshow {
+	position: fixed;
+	bottom: -36px;
+	right: 64px;
+	filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.6));
+}
+#boostgauge {
+	position: fixed;
+	bottom: 120px;
+	right: 330px;
+	filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.6));
+}
+/* .geardisplay {
+	text-align: center;
+	font-family: 'Oswald-Regular';
+	font-size: 38px;
+	width: 57px;
+	height: 57px;
+	position: fixed;
+	bottom: 193px;
+	right: 193px;
+	color: rgb(63,249,165);
+	border: 3px solid rgb(63,249,165);
+	border-radius: 50%;
+	font-style: italic;
+	font-weight: bold;
+} */
+.geardisplay span {
+	/* margin-left: -10px; */
+	opacity: 100%
+}
+/* .speeddisplay {
+	font-size: 117px;
+	position: fixed;
+	bottom: 50px;
+	right: 80px;
+	font-family: 'Oswald-Light';
+	font-style: italic;
+	font-weight: 100;
+	color: #FFF;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+} */
+.geardisplay {
+	/* background-color: #FEFD2B; */
+	background-color: rgba(255,255,255,0.5);
+	width: 30px;
+	height: 50px;
+	font-size: 34px;
+	text-align: center;
+	font-family: 'Oswald-Regular';
+	border-radius: 5px;
+	position: absolute;
+	bottom: 100px;
+	right: 280px;
+	color: rgba(255,255,255);
+}
+.mileagecont {
+	/* background-color: #FEFD2B; */
+	background-color: rgba(255,255,255,0.5);
+	width: 16px;
+	height: 26px;
+	font-size: 18px;
+	text-align: center;
+	display: block;
+	font-family: 'Oswald-Regular';
+	border-radius: 5px;
+	position: absolute;
+	color: rgba(255,255,255);
+}
+#mileage1 {
+	bottom: 65px;
+	right: 265px;
+
+}
+#mileage2 {
+	bottom: 65px;
+	right: 245px;
+
+}
+#mileage3 {
+	bottom: 65px;
+	right: 225px;
+
+}
+#mileage4 {
+	bottom: 65px;
+	right: 205px;
+
+}
+#mileage5 {
+	bottom: 65px;
+	right: 185px;
+
+}
+#mileage6 {
+	bottom: 65px;
+	right: 165px;
+
+}
+.speedcontainer {
+	position: fixed;
+	bottom: 100px;
+	right: 135px;
+	margin-bottom: -25px;
+}
+.speeddisplay {
+	font-size: 90px;
+	font-family: 'Oswald-Light';
+	font-weight: 100;
+	color: #FFF;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+.unitdisplay {
+	position: fixed;
+	bottom: 185px;
+	right: 205px;
+	color: rgba(255,255,255,0.6);
+	font-family: 'Oswald-Regular';
+	font-weight: 100;
+	font-size: 22px;
+}
+.boost {
+	position: fixed;
+	bottom: 190px;
+	right: 380px;
+	color: rgba(255,255,255,0.6);
+	font-family: 'Oswald-Regular';
+	font-weight: 100;
+	font-size: 10px;
+	z-index: -1;
+}
+.gray {
+	color: rgba(255,255,255,0.5);
+}
+.int1 {
+	position: fixed;
+	bottom: 73px;
+	right: 235px;
+}
+.int2 {
+	position: fixed;
+	bottom: 73px;
+	right: 195px;
+}
+.int3 {
+	position: fixed;
+	bottom: 73px;
+	right: 155px;
+}
+/* .unitdisplay {
+	position: fixed;
+	bottom: 198px;
+	right: 75px;
+	color: rgba(255,255,255,0.6);
+	font-family: 'Oswald-Regular';
+	font-style: italic;
+	font-weight: 100;
+	font-size: 22px;
+} */
+/* .abs {
+	position: fixed;
+	bottom: 225px;
+	right: 295px;
+	color: rgba(255,255,255,1);
+	font-family: 'Oswald-Regular';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 18px;
+	display: none;
+} */
+.abscont {
+	position: fixed;
+	bottom: 25px;
+	right: 252px;
+	color: rgba(255,255,255,1);
+	font-family: 'Oswald-Regular';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 18px;
+	width: 40px;
+	height: 40px;
+	margin-bottom: -10px;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.1);
+	border: 2px solid rgb(255,255,255, 0.3);
+}
+.abs {
+	position: fixed;
+	bottom: 11px;
+	right: 250px;
+	color: rgba(255,255,255,1);
+	font-family: 'Oswald-Regular';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 18px;
+	width: 40px;
+	height: 40px;
+}
+.handbrakecont {
+	position: fixed;
+	bottom: 25px;
+	right: 202px;
+	color: rgba(255,255,255,1);
+	font-weight: 100;
+	font-size: 18px;
+	width: 40px;
+	height: 40px;
+	margin-bottom: -10px;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.1);
+	border: 2px solid rgb(255,255,255, 0.3);
+}
+.handbrake {
+	position: fixed;
+	bottom: 11px;
+	right: 200px;
+	color: rgba(255,255,255,1);
+	font-family: 'Oswald-Regular';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 18px;
+	width: 40px;
+	height: 40px;
+}
+.tcscont {
+	position: fixed;
+	bottom: 25px;
+	right: 152px;
+	color: rgba(255,255,255,1);
+	font-weight: 100;
+	font-size: 18px;
+	width: 40px;
+	height: 40px;
+	margin-bottom: -10px;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.1);
+	border: 2px solid rgb(255,255,255, 0.3);
+}
+.tcs {
+	position: fixed;
+	bottom: 11px;
+	right: 150px;
+	color: rgba(255,255,255,1);
+	font-family: 'Oswald-Regular';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 18px;
+	width: 40px;
+	height: 40px;
+}
+.fuelcont {
+	position: fixed;
+	bottom: 30px;
+	right: 297px;
+	color: rgba(255,255,255,1);
+	font-weight: 100;
+	font-size: 18px;
+	width: 20px;
+	height: 20px;
+	margin-bottom: -10px;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.1);
+	border: 2px solid rgb(255,255,255, 0.3);
+}
+.fuel {
+	width: 16px;
+	height: 16px;
+	position: fixed;
+	right: 300px;
+	bottom: 24px;
+}
+.headlightscont {
+	position: fixed;
+	bottom: 30px;
+	right: 127px;
+	color: rgba(255,255,255,1);
+	font-weight: 100;
+	font-size: 18px;
+	width: 20px;
+	height: 20px;
+	margin-bottom: -10px;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.1);
+	border: 2px solid rgb(255,255,255, 0.3);
+}
+.headlights {
+	width: 16px;
+	height: 16px;
+	position: fixed;
+	right: 132px;
+	bottom: 24px;
+}

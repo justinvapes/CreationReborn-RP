@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="">
+  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<!-- <link rel="stylesheet" href="css/app.css" /> -->
+</head>
+
+<head>
+    <title>ESX INVENTORY HUD BY TRSAK</title>
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+</head>
+
+<body>
+    <script src="js/config.js"></script>
+    <script src="locales/en.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/inventory.js"></script>
+    <script>
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                clickOutside: true
+            });
+        });
+    </script>
+
+    <div class="ui">
+	<div id="imageDiv">
+       <img id="imageLogo" src="img/logo-long.png">
+    </div>
+        <div class="inventory">
+            <div id="playerInventory">
+            </div>
+            <div id="controls">
+                <div class="info-div"></div>
+				<div  id="job"><span style="color: #0ff;">Jobless</span></div>
+                <div class="controls-div">
+                    <input type="number" class="control" id="count" value="1">
+                    <div class="control" id="use"></div>
+                    <div class="control" id="give"></div>
+                    <div class="control" id="drop"></div>
+					
+                    <div class="control" id="money"><span style="color: #00fd00;">$0</span></div>
+                    <div class="control" id="bankmoney"><span style="color: #02d2f7;">$0</span></div>
+                    <div class="control" id="dirtymoney"><span style="color: #f44336;">$0</span></div>	
+					<div class="control" id="society"><span style="color: #f4f136;">$0</span></div>	
+					
+		        <div id="ui">	
+	                <div class="status">
+		            <div class="vert-stat" id="hunger">
+			        <div class="bg" style="background-color: #FB8C00;"></div>
+			        <img src="img/hunger.png">
+		        </div>
+		            <div class="vert-stat" id="water">
+			        <div class="bg" style="background-color: #1E88E5;"></div>
+			        <img src="img/water.png">
+		        </div>
+		            <div class="vert-stat" id="drunk">
+			        <div class="bg" style="background-color: #BA68C8"></div>
+			        <img src="img/drunk.png">
+		        </div>
+	           </div>
+              </div>
+
+			  
+                </div>
+            </div>
+            <div id="otherInventory">
+                <div id="noSecondInventoryMessage">
+                </div>
+            </div>
+            <div id="playerInventoryFastItems">
+            </div>
+        </div>
+    </div>
+
+    <div id="dialog">
+        <div id="nearPlayers">
+        </div>
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("#use").html(invLocale.useItem);
+        $("#give").html(invLocale.giveItem);
+        $("#drop").html(invLocale.dropItem);
+        $("#noSecondInventoryMessage").html(invLocale.secondInventoryNotAvailable);
+    });
+</script>
+
+</html>

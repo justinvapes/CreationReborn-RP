@@ -1,0 +1,27 @@
+Locales['en'] = {
+
+	['robbery_cancelled'] = 'the robbery has been cancelled!',
+	['shop_robbery'] = 'Vangelico Jewellery Store',
+	['press_to_rob'] = 'Shoot to start the robbery',
+	['seconds_remaining'] = '~w~ seconds remaining',
+	['robbery_cancelled_at'] = '~r~Robbery suspect at Vangelico\'s seems to have fleed',
+	['robbery_has_cancelled'] = '~r~The storekeeper is no longer scared of you..~b~',
+	['already_robbed'] = 'Vangelico\'s have already had their stock stolen.. There is nothing left!',
+	['rob_in_prog'] = '~r~Alarm triggered at Vangelico Jewellery!',
+	['do_not_move'] = 'Smash the display windows to steal jewels!',
+	['alarm_triggered'] = 'You have triggered the alarm, LSPD are aware of the robbery!',
+	['hold_pos'] = 'when you\'ve collected all the jewels, leave!',
+	['robbery_complete'] = '~r~ The robbery has been successful!~s~ ~h~ Run away! ',
+	['robbery_complete_at'] = '~r~ The robbery has been successful at: ~b~',
+	['min_police'] = '~r~Vangelico is currently closed, all jewels have been taken off site',
+	['robbery_already'] = '~r~A robbery is already in progress.',
+	['robbery_has_ended'] = 'Robbery finished',
+	['end'] = 'Robbery at Vangelico\'s is over!',
+	['notenoughgold'] = '~r~You do not have enough jewels!',
+	['collectinprogress'] = 'Jewelery collection in progress...',
+	['lester'] = '~g~You\'ve cleaned out Vangelico\'s. The stolen jewels can be offloaded at ~r~The Pawnshop\'s!',
+	['press_to_collect'] = 'to collect jewels',
+	['smash_case'] = 'broken windows',
+	['press_to_sell'] = 'Press ~INPUT_PICKUP~ to sell jewels',
+	['need_bag'] = 'You need the bag! Go to the nearest clotheshop.'
+}

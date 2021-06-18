@@ -1,0 +1,17 @@
+Locales['fr'] = {
+	['GPS_info'] = 'New Route Is Now Set On Your ~y~GPS',
+	['cancel_mission'] = 'You Canceled The Mission',
+	['cancel_mission2'] = '~w~Press ~r~[G] ~w~In Your Vehicle For Another Delivery',
+	['pickup'] = 'Press ~INPUT_DETONATE~ To Do The Job',
+	['end_service'] = 'Finish Work',
+	['take_service'] = 'Start Work',
+	['end_service_notif'] = '~r~Finished ~w~Work',
+	['take_service_notif'] = '~g~Started ~w~Work',
+	['start_job'] = 'Press ~r~[G] ~w~To Do Your First Delivery',
+	['Vehicle_Menu_Title'] = 'Service Vehicle',
+	['in_vehicle'] = '~r~Get Out Of Your Vehicle',
+	['vehicle_broken'] = '~w~The Vehicle Is To ~r~Damaged! ~w~Call A Mechanic And Get It Repaired First To Get Your Paycheck & ~g~$500 ~w~Deposit Back',
+	['bad_vehicle'] = 'This Vehicle Does Not Belong to You',
+	['not_good_veh'] = '~r~You Must Be In Your Service Vehicle',
+	['stop_npc'] = 'Action ~r~ Impossible ~s~: Go to the depot To Cash In Your Invoices First',
+}

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PedDecorationCollection>
+  <bRequiredForSync value="true" />
+  <presets>
+	
+	<Item>
+      <uvPos x="0.224000" y="0.500000" />
+      <scale x="0.260000" y="0.350000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Customskull_Tat_000_M</nameHash> 
+      <txdHash>MP_Customskull_Tat_000</txdHash>
+      <txtHash>MP_Customskull_Tat_000</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>	
+	<Item>
+      <uvPos x="0.224000" y="0.550000" />
+      <scale x="0.240000" y="0.250000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Customskull_Tat_000_F</nameHash>
+      <txdHash>MP_Customskull_Tat_000</txdHash>
+      <txtHash>MP_Customskull_Tat_000</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	
+	
+	<Item>
+      <uvPos x="0.224000" y="0.460000" />
+      <scale x="0.232000" y="0.300000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Customskull_Tat_001_M</nameHash> 
+      <txdHash>MP_Customskull_Tat_001</txdHash>
+      <txtHash>MP_Customskull_Tat_001</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>	
+	<Item>
+      <uvPos x="0.224000" y="0.550000" />
+      <scale x="0.240000" y="0.250000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Customskull_Tat_001_F</nameHash>
+      <txdHash>MP_Customskull_Tat_001</txdHash>
+      <txtHash>MP_Customskull_Tat_001</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	
+	
+	<Item>
+      <uvPos x="0.235000" y="0.460000" />
+      <scale x="0.250000" y="0.350000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Customskull_Tat_002_M</nameHash> 
+      <txdHash>MP_Customskull_Tat_002</txdHash>
+      <txtHash>MP_Customskull_Tat_002</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>	
+	<Item>
+      <uvPos x="0.224000" y="0.550000" />
+      <scale x="0.240000" y="0.250000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Customskull_Tat_002_F</nameHash>
+      <txdHash>MP_Customskull_Tat_002</txdHash>
+      <txtHash>MP_Customskull_Tat_002</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	
+	<Item>
+      <uvPos x="0.225000" y="0.600000" />
+      <scale x="0.220000" y="0.250000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Customskull_Tat_003_M</nameHash> 
+      <txdHash>MP_Customskull_Tat_003</txdHash>
+      <txtHash>MP_Customskull_Tat_003</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>	
+	<Item>
+      <uvPos x="0.224000" y="0.550000" />
+      <scale x="0.240000" y="0.250000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Customskull_Tat_003_F</nameHash>
+      <txdHash>MP_Customskull_Tat_003</txdHash>
+      <txtHash>MP_Customskull_Tat_003</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	
+	<Item>
+      <uvPos x="0.235000" y="0.490000" />
+      <scale x="0.180000" y="0.320000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Customskull_Tat_004_M</nameHash> 
+      <txdHash>MP_Customskull_Tat_004</txdHash>
+      <txtHash>MP_Customskull_Tat_004</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>	
+	<Item>
+      <uvPos x="0.224000" y="0.550000" />
+      <scale x="0.240000" y="0.250000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Customskull_Tat_004_F</nameHash>
+      <txdHash>MP_Customskull_Tat_004</txdHash>
+      <txtHash>MP_Customskull_Tat_004</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	
+	<Item>
+      <uvPos x="0.235000" y="0.470500" />
+      <scale x="0.280000" y="0.315000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Customskull_Tat_005_M</nameHash> 
+      <txdHash>MP_Customskull_Tat_005</txdHash>
+      <txtHash>MP_Customskull_Tat_005</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_MALE</gender>
+      <award />
+      <awardLevel />
+    </Item>	
+	<Item>
+      <uvPos x="0.224000" y="0.550000" />
+      <scale x="0.240000" y="0.250000" />
+      <rotation value="0.000000" />
+      <nameHash>MP_Customskull_Tat_005_F</nameHash>
+      <txdHash>MP_Customskull_Tat_005</txdHash>
+      <txtHash>MP_Customskull_Tat_005</txtHash>
+      <zone>ZONE_TORSO</zone>
+      <type>TYPE_TATTOO</type>
+      <faction>FM</faction>
+      <garment>All</garment>
+      <gender>GENDER_FEMALE</gender>
+      <award />
+      <awardLevel />
+    </Item>
+	
+	
+	
+	
+  </presets>
+  <nameHash>mpcustomskull_overlays</nameHash>
+  <medalScale x="0.240000" y="0.100000" />
+</PedDecorationCollection>

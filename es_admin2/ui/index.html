@@ -1,0 +1,190 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<style>#admin,#exist,#server,#dev { display: none; }</style>
+
+		<script>
+			let selected = 0;
+			$(function(){
+				$(document).keyup(function(e) {
+					if(e.keyCode == 27){
+						$("#admin").css('display', 'none')
+						$.post('http://es_admin2/close', JSON.stringify({}));
+					}
+				})
+				window.addEventListener('message', function(event) {
+					if(event.data.type == "open"){
+						$('#notexist').css('display', 'block')
+						$('#exist').css('display', 'none')
+						$("#admin").css('display', "block")
+						$('input').val("")
+
+						$('#list').empty()
+						for(let i in event.data.players){
+							let player = event.data.players[i];
+							$('#list').append('<div class="player" id="player_' + player.id + '">' + player.name + '</div>')
+						}
+						$(".player").click(function(){
+							let id = $(this).attr('id').replace('player_', '')
+							selected = parseInt(id)
+
+							$('.player').removeClass('selected')
+							$(this).addClass('selected')
+
+							$('#exist').find('h1').text(selected + ", " + $(this).text())
+
+							$('#notexist').css('display', 'none')
+							$('#exist').css('display', 'block')
+						})
+					}
+				});
+
+				$("#close").click(() => {
+					$("#admin").css('display', 'none')
+					$.post('http://es_admin2/close', JSON.stringify({}));
+				})
+
+				$("#select_users").click(() => {
+				    $('#dev').css('display', 'none')
+					$('#server').css('display', 'none')
+					$('#users').css('display', 'block')
+					$(".tab").removeClass("selected")
+					$("#select_users").addClass("selected")
+					$("#select_users").blur()
+				})
+
+				$("#select_server").click(() => {
+					$('#users').css('display', 'none')
+					$('#dev').css('display', 'none')
+					$('#server').css('display', 'block')
+					$(".tab").removeClass("selected")
+					$("#select_server").addClass("selected")
+					$("#select_server").blur()
+				})
+				
+				$("#select_dev").click(() => {
+					$('#users').css('display', 'none')
+					$('#server').css('display', 'none')
+					$('#dev').css('display', 'block')
+					$(".tab").removeClass("selected")
+					$("#select_dev").addClass("selected")
+					$("#select_dev").blur()
+				})
+				
+
+
+				$("#slay_all").click(function() {$.post('http://es_admin2/quick', JSON.stringify({id: selected, type: 'slay_all'})); $(this).blur()})
+				$("#bring_all").click(function() {$.post('http://es_admin2/quick', JSON.stringify({id: selected, type: 'bring_all'})); $(this).blur()})
+				$("#slap_all").click(function() {$.post('http://es_admin2/quick', JSON.stringify({id: selected, type: 'slap_all'})); $(this).blur()})
+                $("#revive_all").click(function() {$.post('http://es_admin2/quick', JSON.stringify({id: selected, type: 'revive_all'})); $(this).blur()})
+
+				$("#slay").click(function() {$.post('http://es_admin2/quick', JSON.stringify({id: selected, type: 'slay'})); $(this).blur()})
+				$("#skin").click(function() {$.post('http://es_admin2/quick', JSON.stringify({id: selected, type: 'skin'})); $(this).blur()})
+				$("#explode").click(function() {$.post('http://es_admin2/quick', JSON.stringify({id: selected, type: 'explode'})); $(this).blur()})
+				$("#kick").click(function() {$.post('http://es_admin2/quick', JSON.stringify({id: selected, type: 'kick'})); $(this).blur()})
+				$("#noclip").click(function() {$.post('http://es_admin2/quick', JSON.stringify({id: selected, type: 'noclip'})); $(this).blur()})
+				$("#freeze").click(function() {$.post('http://es_admin2/quick', JSON.stringify({id: selected, type: 'freeze'})); $(this).blur()})
+				$("#heal").click(function() {$.post('http://es_admin2/quick', JSON.stringify({id: selected, type: 'heal'})); $(this).blur()})
+				$("#bring").click(function() {$.post('http://es_admin2/quick', JSON.stringify({id: selected, type: 'bring'})); $(this).blur()})
+				$("#goto").click(function() {$.post('http://es_admin2/quick', JSON.stringify({id: selected, type: 'goto'})); $(this).blur()})
+				$("#slap").click(function() {$.post('http://es_admin2/quick', JSON.stringify({id: selected, type: 'slap'})); $(this).blur()})
+				$("#crash").click(function() {$.post('http://es_admin2/quick', JSON.stringify({id: selected, type: 'crash'})); $(this).blur()})
+				$("#flip180").click(function() {$.post('http://es_admin2/vehicle', JSON.stringify({id: selected, type: 'flip180'})); $(this).blur()})
+				$("#kickflip").click(function() {$.post('http://es_admin2/vehicle', JSON.stringify({id: selected, type: 'kickflip'})); $(this).blur()})
+				$("#rainbow").click(function() {$.post('http://es_admin2/vehicle', JSON.stringify({id: selected, type: 'rainbow'})); $(this).blur()})
+				$("#pink").click(function() {$.post('http://es_admin2/vehicle', JSON.stringify({id: selected, type: 'pink'})); $(this).blur()})
+				$("#ExplosiveB").click(function() {$.post('http://es_admin2/vehicle', JSON.stringify({id: selected, type: 'ExplosiveB'})); $(this).blur()})
+												
+				$("#saveall").click(function() {$.post('http://es_admin2/dev', JSON.stringify({selected, type: 'saveall'})); $(this).blur()})
+				
+				$("#setgroup").click(function() {$.post('http://es_admin2/set', JSON.stringify({user: selected, type: 'group', param: $("#newgroup").val()})); $(this).blur()})
+				$("#setlevel").click(function() {$.post('http://es_admin2/set', JSON.stringify({user: selected, type: 'level', param: $("#newlevel").val()})); $(this).blur()})
+				$("#setmoney").click(function() {$.post('http://es_admin2/set', JSON.stringify({user: selected, type: 'money', param: $("#newmoney").val()})); $(this).blur()})
+				$("#setbank").click(function() {$.post('http://es_admin2/set', JSON.stringify({user: selected, type: 'bank', param: $("#newbank").val()})); $(this).blur()})
+
+				$('button').click(function() {$(this).blur()});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="admin">
+			<div class="topbar">
+				<p>Staff Panel</p>
+				<div id="close">&#10060;</div>
+			</div>
+
+			<div id="tabs">
+				<button id="select_users" class="tab selected">Players</button>
+				<button id="select_server" class="tab">All Players</button>
+				<button id="select_dev" class="tab">Dev Options</button>
+			</div>
+
+			<div id="main">
+				<div id="users">
+					<div id="list">
+					</div>
+					<div id="selected">
+						<div id="notexist">
+							<h1>Select a player</h1>
+						</div>
+						<div id="exist">
+							<h1>Kanersps</h1>
+							
+							<div id="quick">
+								<h3>Player Options</h3>
+								<button class="quick" id="heal">Revive Player</button>
+								<button class="quick" id="bring">Bring Player To Me</button>
+								<button class="quick" id="skin">Skin</button>
+								<button class="quick" id="goto">Goto Player</button>							
+								<button class="quick" id="slay">Kill Player</button>
+								<button class="quick" id="freeze">Freeze Player</button>
+								<button class="quick" id="explode">Explode Player</button>							
+                                <button class="quick" id="crash">Crash Game</button>					
+							</div>
+														
+							<div id="weapon">
+								<h3>Weapon Options</h3>							
+								<button class="vehicle" id="ExplosiveB">Explosive Bullets</button>					
+							</div>
+																
+							<div id="vehicle">
+								<h3>Vehicle Options</h3>
+								<button class="vehicle" id="flip180">Flip Car 180</button>
+								<button class="vehicle" id="kickflip">Kick Flip</button>
+								<button class="vehicle" id="rainbow">Rainbow Paint</button>
+								<button class="vehicle" id="pink">Pink Paint</button>												
+							</div>					
+												
+							<div id="set">
+								<h3>Attributes</h3>
+								<div class="group_set">
+									<label>Money</label>
+									<input id="newmoney" type="text" placeholder="new money"></input>
+									<button id="setmoney">Set</button>
+								</div>
+								<div class="group_set">
+									<label>Bank</label>
+									<input id="newbank" type="text" placeholder="new bank"></input>
+									<button id="setbank">Set</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+				<div id="server">
+				   <h3>Quick Options</h3>
+				   <button class="quick" id="slay_all">Kill All</button>				   
+				   <button class="quick" id="revive_all">Revive All</button>
+				   <button class="quick" id="bring_all">Teleport All To Me</button>
+			   </div>
+			   
+			   <div id="dev">
+				   <h3>Dev Options</h3>			   
+                   <button class="quick" id="saveall">Save All DB</button>	
+			   </div>			   
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<div class="auth-block">
+			<div class="auth-logo">
+				<img src="img/logo.png" style="width: 300px; height: 300px;">
+			</div>
+			<form id="register" class="form">
+				<input class="form-element" id="firstname" type="text" placeholder="First name"><br>
+				<input class="form-element" id="lastname" type="text" placeholder="Last name"><br>
+				<div class="dob">
+					<input class="form-element dob" id="day" type="text" placeholder="Day (1-31)">
+					<input class="form-element dob" id="month" type="text" placeholder="Month (1-12)">
+					<input class="form-element dob" id="year" type="text" placeholder="Year (1900-2020)"><br>
+				</div>
+				<!-- <input class="form-element" d="dateofbirth" type="text" placeholder="Date of Birth (DD-MM-YYYY)"><br> -->
+				<input class="form-element" id="height" type="text" min="140" max="200" placeholder="Height (140-200 cm)"><br>
+				<div class="radio">
+					<center>
+						<input type="radio" id="male" name="sex" value="M" checked><label for="male">Male</label>
+						<input type="radio" id="female" name="sex" value="F"><label for="female">Female</label><br>
+					</center>
+				</div>
+				<button id="submit" type="submit">Create</button>
+			</form>
+			<div id="failed">
+			</div>
+		</div>
+		<script src="script.js" type="text/javascript"></script>
+	</body>
+</html>

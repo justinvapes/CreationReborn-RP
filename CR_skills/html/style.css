@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    display: none;
+}
+
+#cursor {
+    position: absolute;
+    z-index: 999999;
+    display: none;
+}
+
+.info {
+    background-color:rgba(255, 255, 255, 0.863);
+    color: black;
+    font-size:14px;
+    text-align: center;
+    padding:5px;
+    margin-top:5px;
+    border-radius:10px;
+}
+
+#imageDiv > img{
+    width: 400px;
+	margin-left: 90px;
+	padding-top: -50px;
+}
+
+.dialog {
+    min-width: 300px;
+    max-width: 900px;
+    width:30%;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:10px;
+}
+
+.skill {
+    margin-top:5px;
+    margin-bottom:5px;
+    float:left;
+    margin-left:5px;
+    width: calc(50% - 10px);
+}
+
+#roadworksProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size:14px;
+}
+
+#roadworksBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(47, 118, 211);
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+}
+
+#landscapingProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#landscapingBar {
+    width: 10%;
+    height: 20px;
+    background-color: #4CAF50;
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+}
+
+#auspostProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#auspostBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(187, 63, 47);
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+}
+
+#weedProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#weedBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(201, 183, 26);
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+}
+
+#fightingProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#fightingBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(26, 166, 201);
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+}
+
+#staminaProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#staminaBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(125, 19, 134);
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+ }
+
+.header {
+  width:100%;
+  height: 52px;
+  background-color: #1a1c1e;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header .logo {
+  width: 80%;
+  max-height: 50%;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.header h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin:auto;
+  color: white; 
+  margin-left: 32%;
+}
+.close{
+	padding: 10px;
+	background-color: rgba(255, 70, 70, 1);
+}
+.close:hover{
+	padding: 10px;
+	background-color: rgba(255, 70, 70, 0.5);
+}
+
+
+/*2560x1440*/
+@media all and (min-width: 2560px) and (min-height: 1440px) {
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    display: none;
+}
+
+#cursor {
+    position: absolute;
+    z-index: 999999;
+    display: none;
+}
+
+.info {
+    background-color:rgba(255, 255, 255, 0.863);
+    color: black;
+    font-size:14px;
+    text-align: center;
+    padding:5px;
+    margin-top:5px;
+    border-radius:10px;
+}
+
+#imageDiv > img{
+    width: 550px;
+	margin-left: 110px;
+	padding-top: -50px;
+}
+
+.dialog {
+    min-width: 300px;
+    max-width: 900px;
+    width:30%;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:10px;
+}
+
+.skill {
+    margin-top:5px;
+    margin-bottom:5px;
+    float:left;
+    margin-left:5px;
+    width: calc(50% - 10px);
+}
+
+#roadworksProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size:14px;
+}
+
+#roadworksBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(47, 118, 211);
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+}
+
+#landscapingProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#landscapingBar {
+    width: 10%;
+    height: 20px;
+    background-color: #4CAF50;
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+}
+
+#auspostProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#auspostBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(187, 63, 47);
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+}
+
+#weedProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#weedBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(201, 183, 26);
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+}
+
+#fightingProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#fightingBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(26, 166, 201);
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+}
+
+#staminaProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#staminaBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(125, 19, 134);
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+ }
+.header {
+  width:100%;
+  height: 52px;
+  background-color: #1a1c1e;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header .logo {
+  width: 80%;
+  max-height: 50%;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.header h1 {
+  font-size: 2em;
+  text-align: center;
+  margin:auto;
+  color: white; 
+  margin-left: 32%;
+}
+.close{
+	padding: 10px;
+	background-color: rgba(255, 70, 70, 1);
+}
+.close:hover{
+	padding: 10px;
+	background-color: rgba(255, 70, 70, 0.5);
+}
+}
+
+
+/*3440x1440*/
+@media all and (min-width: 3440px) and (min-height: 1440px) {
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    display: none;
+}
+
+#cursor {
+    position: absolute;
+    z-index: 999999;
+    display: none;
+}
+
+.info {
+    background-color:rgba(255, 255, 255, 0.863);
+    color: black;
+    font-size:14px;
+    text-align: center;
+    padding:5px;
+    margin-top:5px;
+    border-radius:10px;
+}
+
+#imageDiv > img{
+    width: 550px;
+	margin-left: 185px;
+	padding-top: -50px;
+}
+
+.dialog {
+    min-width: 300px;
+    max-width: 900px;
+    width:30%;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:10px;
+}
+
+.skill {
+    margin-top:5px;
+    margin-bottom:5px;
+    float:left;
+    margin-left:5px;
+    width: calc(50% - 10px);
+}
+
+#roadworksProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size:14px;
+}
+
+#roadworksBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(47, 118, 211);
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+}
+
+#landscapingProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#landscapingBar {
+    width: 10%;
+    height: 20px;
+    background-color: #4CAF50;
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+}
+
+#auspostProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#auspostBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(187, 63, 47);
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+}
+
+#weedProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#weedBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(201, 183, 26);
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+}
+
+#fightingProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#fightingBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(26, 166, 201);
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+}
+
+#staminaProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#staminaBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(125, 19, 134);
+    text-align: center; /* To center it horizontally (if you want) */
+    color: white; 
+ }
+ 
+ .header {
+  width:100%;
+  height: 52px;
+  background-color: #1a1c1e;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header .logo {
+  width: 80%;
+  max-height: 50%;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.header h1 {
+  font-size: 2em;
+  text-align: center;
+  margin:auto;
+  color: white; 
+  margin-left: 35%;
+}
+.close{
+	padding: 10px;
+	background-color: rgba(255, 70, 70, 1);
+}
+.close:hover{
+	padding: 10px;
+	background-color: rgba(255, 70, 70, 0.5);
+}
+}

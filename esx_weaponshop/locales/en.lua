@@ -1,0 +1,23 @@
+Locales ['en'] = {
+  ['buy_license'] = 'Purchase Weapon License?',
+  ['yes'] = 'Purchase Weapon License For $%s',
+  ['no'] = 'No',
+  ['not_enough'] = 'You Do Not Have Enough Money',
+  ['shop_menu_title'] = 'Ammu-Nation',
+  ['shop_menu_prompt'] = '~y~Press~w~ ~INPUT_CONTEXT~ To Talk To The ~y~Clerk~s~',
+  ['blackmarket_menu_prompt'] = '~y~Press~w~ ~INPUT_CONTEXT~ To Open The ~r~Black Market~s~',
+  ['shop_menu_item'] = '$%s',
+  ['map_blip'] = 'Ammu-Nation',
+  ['gunshop_owned'] = 'Owned',
+  ['gunshop_free'] = 'Free',
+  ['gunshop_bought'] = 'You Purchase A ~y~%s~s~ For ~r~$%s~s~',
+  ['gunshop_item'] = '$%s',
+  ['gunshop_weapontitle'] = 'Weapon Shop',
+  ['gunshop_componenttitle'] = 'Weapon Shop - Weapon Attatchments',
+  ['ammo'] = 'ammo',  
+  ['Pistol'] = 'Buy 50 Rounds Of Pistol Ammo For:',
+  ['Smg'] = 'Buy 50 Rounds Of Smg Ammo For:',
+  ['Shotgun'] = 'Buy 50 Rounds Of Shotgun Ammo For:',
+  ['Rifle'] = 'Buy 50 Rounds Of Rifle Ammo For:',
+  ['Sniper'] = 'Buy 50 Rounds Of Sniper Ammo For:'
+}

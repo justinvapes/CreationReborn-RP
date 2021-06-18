@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	</link>
+</head>
+
+<body>
+	<div id="wrap">
+		<div class="header">
+
+			<div id="imageDiv">
+				<div class="imgContainer">
+					<img id="imageLogo" src="img/logo.png">
+				</div>
+				<br />
+				<br />
+
+				<div class="jobs">
+					<a style="color:#5ea1e0;"> 👮LSPD: <span id="police">0</span></a>
+					<a style="color:FFFFFF;">|</a>
+					<a style="color:red;"> 👨‍⚕️PHAS: <span id="ems">0</span></a>
+					<a style="color:FFFFFF;">|</span> </a>
+					<a style="color:#FF8000;"> 👨‍🔧LSC: <span id="mechanic2">0</span>
+					<span style="color:#ffffff;">- </span><span id="offmechanic2" style="color:#000;">0</span></a>
+					<a style="color:FFFFFF;">|</a>
+					<a style="color:#FF8000;"> 👨‍🔧BCW: <span id="mechanic">0</span>
+					<span style="color:#ffffff;">- </span><span id="offmechanic" style="color:#000;">0</span></a>
+					<a style="color:FFFFFF;">|</a>
+					<a style="color:#66CC00;"> 🚗PDM: <span id="cardealer">0</span>
+					<span style="color:#ffffff;">- </span><span id="offcardealer" style="color:#000;">0</span></a>
+					<a style="color:FFFFFF;">|</a>
+					<a style="color:#66CC00;"> 🚗BC: <span id="cardealer2">0</span>
+					<span style="color:#ffffff;">- </span><span id="offcardealer2" style="color:#000;">0</span></a>
+					<a style="color:FFFFFF;">|</a>
+					<a style="color:#00FFFF;"> 💃VU: <span id="unicorn">0</span>
+					<span style="color:#ffffff;">- </span><span id="offunicorn" style="color:#000;">0</span></a>
+					<a style="color:FFFFFF;">|</a>
+					<a style="color:#00FFFF;"> 💃CG: <span id="nightclub">0</span>
+					<span style="color:#ffffff;">- </span><span id="offnightclub" style="color:#000;">0</span></a>
+				</div>
+			</div> <!-- End of image -->
+
+			<div class="table-wrapper-scroll-y my-custom-scrollbar">
+				<div>
+					<table class="playerlist">
+						<tr>
+							<th>Name</th>
+							<th>ID</th>
+							<th>Ping</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+		</div>
+
+		<div class=" serverinfo">
+			Players: <span id="player_count">0</span> / <span id="max_players">0</span> <span style="color:#5ea1e0;">|</span>
+			Staff: <span id="server_uptime">0</span><span style="color:#5ea1e0;"> |</span>
+			Play Time: <span id="play_time"></span><span style="color:#5ea1e0;"> |</span>
+			Sub Tier: <span id="sub_tier" style="color:#e0bd5e;"></span><span style="color:#5ea1e0;"> |</span>
+			Credits: $<span id="credits" style="color:#85e05e;"></span><span style="color:#5ea1e0;"></span>
+		</div>
+	</div>
+
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="nui://esx_scoreboard/html/script.js" type="text/javascript"></script>
+</body>
+
+</html>

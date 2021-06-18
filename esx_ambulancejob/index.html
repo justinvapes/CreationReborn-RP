@@ -1,0 +1,30 @@
+<html>
+    <head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.14/howler.core.min.js"></script>
+        <script>
+        var radioAudio;
+        
+        window.addEventListener('message', function(event) {
+            var item = event.data;
+            
+            if (item.playhospital) {
+                if (radioAudio != null) {
+                    radioAudio.pause();
+                }
+                
+                radioAudio = new Audio(item.sound);
+                radioAudio.volume = 0.5;
+                radioAudio.play();
+            } else if (item.changevolume) {
+                if (radioAudio != null) {
+                    radioAudio.volume = item.volume;
+                }
+            } else if (item.stophospital) {
+                if (radioAudio != null) {
+                    radioAudio.pause();
+                }
+            }
+        });
+        </script>
+    </head>
+</html>
